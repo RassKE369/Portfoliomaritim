@@ -1,0 +1,83 @@
+/* css/skills.css */
+
+/* Section styling */
+.section {
+  padding: 3rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.section p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Sub-section titles */
+.skills-section h2 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #007bff33;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+/* Skills grid layout */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Skill card */
+.skills-grid li {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+}
+
+/* When visible (animated by JS) */
+.skills-grid li.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover effect */
+.skills-grid li:hover {
+  background: #007bff;
+  color: #fff;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .section h1 {
+    font-size: 1.7rem;
+  }
+
+  .skills-grid li {
+    font-size: 0.9rem;
+    padding: 0.9rem;
+  }
+}
