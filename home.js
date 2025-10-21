@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
   const callBtn = document.getElementById('btn-call');
 
   // Prefilled examples (replace with real values)
-  const phone = '[0748042681]'; // e.g. 1234567890 (include country code)
+  const phone = '[+254748042681]'; // e.g. 1234567890 (include country code)
   const email = '[erastuskiprop17@gnail.com]'; // e.g. you@example.com
   const waMsg = encodeURIComponent('Hello 369! I saw your portfolio and would like to connect.');
   if(waBtn) waBtn.href = `https://wa.me/${phone}?text=${waMsg}`;
