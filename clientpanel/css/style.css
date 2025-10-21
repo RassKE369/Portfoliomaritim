@@ -1,0 +1,34 @@
+/* css/style.css - main CSS imports */
+@import url('header.css');
+@import url('footer.css');
+@import url('home.css');
+@import url('experience.css');
+@import url('skills.css');
+@import url('resume.css');
+@import url('contact.css');
+
+/* Base styles */
+:root{
+  --bg: #f7f9fc;
+  --card: #ffffff;
+  --accent: #0078ff;
+  --text: #222;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+}
+
+.container{max-width:1100px;margin:0 auto;padding:1rem}
+
+/* Link base */
+a{color:var(--accent);text-decoration:none}
+button{font-family:inherit}
+img{max-width:100%;height:auto;display:block}
+/* small utility */
+.center{display:flex;align-items:center;justify-content:center}
